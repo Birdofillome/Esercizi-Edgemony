@@ -1,0 +1,35 @@
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;   
+    list-style-type: none;
+}
+
+.navbar-list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 15px;
+    outline: none;
+    gap: 30px;
+}
+.form {
+    list-style-type: none;
+
+}
+body {font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+    text-shadow: 16px 16px red;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 10%;
+    }
