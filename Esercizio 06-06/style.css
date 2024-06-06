@@ -1,0 +1,66 @@
+body{
+    background-color: #d9dad7;
+}
+
+h1{
+display: flex;
+justify-content: center;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+header {
+display: flex;
+justify-content: center;
+}
+
+.bottone {
+width: 120px;
+height: 30px;
+box-shadow: 5px 5px 10px 2px #12111146;
+border-radius: 20px;
+border: solid  #d9dad7;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.card {
+    margin: auto;
+    background-color: white;
+    border: solid  #d9dad7;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 2px #12111146;
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    
+}
+
+.description{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.titolo{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.prezzo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.immagine {
+    width: 30%;
+    height: 30%;
+}

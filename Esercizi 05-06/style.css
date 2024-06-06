@@ -1,0 +1,33 @@
+/* .container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+} */
+
+.bottone_uno {
+    border: solid transparent;
+    background-color: #fa8072;
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 10px 10px 5px #ababab9b;
+    color: white;
+}
+
+.bottone_due {
+    border: solid transparent;
+    background-color: #fa8072;
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 10px 10px 5px #ababab9b;
+    color: white;
+}
+
+ul {
+margin-top: 70px;
+display: flex;
+gap: 40px;
+}
