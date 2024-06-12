@@ -9,7 +9,7 @@ const options = {
   },
 };
 
-export const GET = async (endpoint, page = 1) => {
+export const GET = async (endpoint, page = 1, query = "") => {
     const response = await fetch(
       `${BASE_URL}${endpoint}?page=${page}&include_adult=false`,
       options

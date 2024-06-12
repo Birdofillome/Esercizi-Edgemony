@@ -7,6 +7,14 @@
     <title>Document</title>
 </head>
 <body>
+    <form action="submit" style="display: flex; flex-direction: column; max-width: 300px; gap: 12px">
+        <input class="title" type="text" placeholder="title" />
+      <input class="price" type="number" placeholder="price" />
+      <input class="description" type="text" placeholder="description" />
+      <input class="category-id" type="number" placeholder="category id" />
+      <input class="images" type="text" placeholder="images" />
+      <button class="button-send">send</button>
+    </form>
     <script src="./index.js" type="module"></script>
     <input class="searchbar" type="text" placeholder="search"/>
     <button class="button-page" >Next</button>
@@ -14,6 +22,7 @@
         <button id="popular">Popular</button>
         <button id="top_rated">Top rated</button>
     </div>
+    <div class="genres-container"></div>
     <div class="container"></div>
 </body>
 </html>
