@@ -7,21 +7,30 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="head">
     <form
-    action="submit"
-    style="display: flex; flex-direction: column; max-width: 300px; gap: 12px">
-    <input class="title" type="text" placeholder="titolo" />
-    <input class="price" type="number" placeholder="prezzo" />
-    <input class="description" type="text" placeholder="descrizione" />
-    <input class="category-id" type="number" placeholder="categoria id" />
-    <input class="images" type="text" placeholder="immagine" />
+    action="submit">
+    <input class="title" type="text" placeholder=" Titolo" />
+    <p class="errore-titolo"></p>
+    <input class="price" type="number" placeholder=" Prezzo" />
+    <p class="errore-prezzo"></p>
+    <input class="description" type="text" placeholder=" Descrizione" />
+    <p class="errore-descrizione"></p>
+    <input class="category-id" type="number" placeholder=" Categoria ID" />
+    <p class="errore-categoria"></p>
+    <input class="images" type="text" placeholder=" Immagine" />
+    <p class="errore-immagine"></p>
     <button class="button-send">Invia</button>
     </form>
+</div>
     <br>
     <br>
+    <div class="delete">
     <form action="submit">
-    <input class="delete-id" type="number" placeholder="inserisci id da eliminare"/>
+    <input class="delete-id" type="number" placeholder="  Inserisci ID da cancellare"/>
     <button class="button-delete">Cancella</button></form>
+    </div>
     <script type="module" src="./index.js"></script>
+    <div class="main-container"></div>
 </body>
 </html>
