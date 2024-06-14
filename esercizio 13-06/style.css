@@ -5,6 +5,11 @@ justify-content: center;
 flex-direction: column;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+}
+
 .head {
     border: solid rgba(255, 255, 255, 0.137) 2px;
     width: 500px;
