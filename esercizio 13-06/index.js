@@ -109,7 +109,7 @@ const get = async (id) => {
         console.log(data)
         return data;
     } catch (error) {
-        messageError.textContent = "id non trovato";
+        messageError.textContent = "ID non trovato";
 
     }     
 }
