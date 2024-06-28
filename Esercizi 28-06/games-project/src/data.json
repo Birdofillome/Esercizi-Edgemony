@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "img": "diablo.jpg" ,
+        "title": "Diablo IV",
+        "price": "59.90€"
+    },
+    
+    {
+        "id": 2,
+        "img": "elden ring.webp",
+        "title": "Elden Ring",
+        "price": "59.90€"
+    },
+
+    {
+        "id": 3,
+        "img": "mario.webp",
+        "title": "Mario Kart 8 Deluxe ",
+        "price": "36.90€"
+    },
+
+    {
+        "id": 4,
+        "img": "tekken.webp",
+        "title": "Tekken 8",
+        "price": "49.90€"
+    }
+]
