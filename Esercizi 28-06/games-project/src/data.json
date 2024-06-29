@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "img": "diablo.jpg" ,
+        "img": "diablo.jpg",
         "title": "Diablo IV",
         "price": "59.90€"
     },
@@ -24,6 +24,31 @@
         "id": 4,
         "img": "tekken.webp",
         "title": "Tekken 8",
+        "price": "49.90€"
+    },
+    {
+        "id": 5,
+        "img": "overwatch2.webp",
+        "title": "Overwatch 2 ",
+        "price": "Free"
+    },
+
+    {
+        "id": 6,
+        "img": "reddead2.jfif",
+        "title": "Red Dead Redemption 2",
+        "price": "39.90€"
+    },
+    {
+        "id": 7,
+        "img": "dragonball.webp",
+        "title": "Dragon Ball Sparking Zero ",
+        "price": "Arriving October 11th 2024"
+    },
+    {
+        "id": 8,
+        "img": "thelastofus.webp",
+        "title": "The Last of us: Part1",
         "price": "49.90€"
     }
 ]

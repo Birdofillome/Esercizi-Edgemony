@@ -7,7 +7,7 @@ body {
 
 header {
     background-color: #1f1f1f;
-    padding: 20px 0;
+    padding: 5px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -25,10 +25,8 @@ header {
     align-items: center;
 }
 
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #ff4500;
+.icon{
+    width: 100px;
 }
 
 .nav {

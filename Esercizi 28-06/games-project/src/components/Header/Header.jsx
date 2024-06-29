@@ -4,7 +4,7 @@ function Header() {
     return <header>
     <div className="container">
         <div className="wrapper">
-            <div className="logo">Inserisci logo</div>
+            <div className="logo"><img src="logo.png" alt="logo" className="icon"/></div>
         </div>
         <Menu/>
     </div>

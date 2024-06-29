@@ -17,7 +17,11 @@ main {
     max-width: 1200px;
     margin: 0 auto;
 }
-
+.titleCategories {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
 .cardEl {
     background-color: #1f1f1f;
     border-radius: 10px;
@@ -46,4 +50,24 @@ main {
     font-size: 1em;
     color: #ffffff;
     margin: 15px;
+}
+
+.buttonContain{
+    display: flex;
+    justify-content: end;
+}
+
+.add-kart {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.add-kart:hover {
+    background-color: #218838;
 }
