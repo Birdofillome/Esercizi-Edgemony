@@ -5,7 +5,6 @@ import posts from './data.json'
 
 
 function App() {
-
   return (
     <>
     <Header/>

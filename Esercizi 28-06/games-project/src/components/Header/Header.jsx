@@ -39,10 +39,4 @@ function Header() {
             <li className="item"><a href={href}>{label}</a></li>
         )}
         
-
-
-
-
-
-
     export { Header };
