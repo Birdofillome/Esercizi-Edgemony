@@ -1,0 +1,92 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: #f0f4f8;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.calculator {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 25%;
+}
+
+.clearButton {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: right;
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.containerradio {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerradio label {
+    margin: 5px 0;
+}
+
+button.calculate {
+    background-color: #ffce00;
+    border: none;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffce00;
+    border: none;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button img {
+    margin-right: 10px;
+}
+
+
+.results {
+    background-color: #1d3557;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+}
