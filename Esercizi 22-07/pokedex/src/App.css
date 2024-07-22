@@ -1,0 +1,85 @@
+body {
+    background-color: #1a1a1a; 
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main {
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.tabella {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.tabella th,
+.tabella td {
+    padding: 15px;
+    text-align: left;
+}
+
+.tabella thead th {
+    background-color: #333;
+    color: #fff;
+}
+
+.tabella tbody tr {
+    background-color: #2a2a2a;
+}
+
+.tabella tbody tr:nth-child(even) {
+    background-color: #1e1e1e;
+}
+
+.tabella tbody tr:hover {
+    background-color: #444;
+}
+
+.tabella tbody tr td img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.tabella tbody tr td:nth-child(1) img {
+    border-radius: 50%;
+    border: 2px solid;
+}
+
+.tabella tbody tr:nth-child(1) td:nth-child(1) img {
+    border-color: #78c850; 
+}
+
+.tabella tbody tr:nth-child(2) td:nth-child(1) img {
+    border-color: #f08030; 
+}
+
+.tabella tbody tr:nth-child(3) td:nth-child(1) img {
+    border-color: #6890f0; 
+}
+
+
+.tabella tbody tr td a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.tabella tbody tr td a:hover {
+    text-decoration: underline;
+}
