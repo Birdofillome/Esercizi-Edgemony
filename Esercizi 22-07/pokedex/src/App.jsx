@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { getPokemonList } from "./api/pokemonClient";
 import './App.css';
 import { PokemonTable } from "./components/pokemonTable";
-
+import SkeletonLoader from "./components/SkeletonLoader";
 
 function App() {
   const [pokemonList, setPokemonList] = useState([]);
@@ -24,16 +24,13 @@ function App() {
     getPokemons();
   }, []);
 
-  useEffect(() => {
-    console.log(pokemonList);
-  }, [pokemonList]);
-
-  if (isLoading) return <p>is loading..</p>;
-
   return (
-    <>
       <div className="container">
         <main className="main">
+        {isLoading ? (
+          <SkeletonLoader />
+        ) : (
+          <>
           <div className="title">
             <h1 className="">{labels.pokemonList}</h1>
           </div>
@@ -57,9 +54,10 @@ function App() {
               <PokemonTable/>
             </table>
           </div>
+          </>
+          )}
         </main>
       </div>
-    </>
   );
 }
 

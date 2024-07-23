@@ -1,7 +1,9 @@
 export const labels = {
 	pokemonName: "Name",
 	pokemonType: "Type",
-	pokemonNumber: "#",
+	pokemonNumber: "Number",
+	pokemonDetail: "Details",
 
-	pokemonList: "Pokédex"
+	pokemonList: "Pokédex",
+	navHome: "Home"
 }

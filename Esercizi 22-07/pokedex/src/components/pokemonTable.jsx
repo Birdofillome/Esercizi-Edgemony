@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { getPokemonList } from "../api/pokemonClient";
-import { ButtonView } from "../components/Button";
+import { Link } from "react-router-dom";
+import { labels } from "../data/label";
 
 const PokemonTable = () => {
     const [pokemons, setPokemons] = useState([]);
@@ -18,7 +19,11 @@ return (
             <td>{pokemon.name}</td> 
             <td>{pokemon.type}</td>
             <td>{pokemon.number}</td>
-            <td><ButtonView/></td>
+            <td><Link
+            to={`/pokemons/${pokemon.id}`}>
+                {labels.pokemonDetail}
+            </Link>
+            </td>
             </tr> 
             
         ))

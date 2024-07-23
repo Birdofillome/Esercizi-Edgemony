@@ -1,0 +1,38 @@
+@keyframes skeleton-loading {
+    0% {
+    background-position: -200px 0;
+    }
+    100% {
+    background-position: calc(200px + 100%) 0;
+    }
+}
+
+.skeleton {
+    background-color: #2a2a2a;
+    background-image: linear-gradient(90deg, #2a2a2a, #3a3a3a, #2a2a2a);
+    background-size: 200px 100%;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    display: inline-block;
+    line-height: 1;
+    animation: skeleton-loading 1.5s infinite;
+}
+
+.skeleton-title {
+    width: 80%;
+    height: 30px;
+    margin: 20px auto;
+}
+
+.skeleton-text {
+    width: 90%;
+    height: 20px;
+    margin: 10px auto;
+}
+
+.skeleton-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
