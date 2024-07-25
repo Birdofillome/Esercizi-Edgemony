@@ -5,6 +5,9 @@ import './index.css'
 import DefaultLayout from './components/DefaultLayout.jsx'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import PokemonDetail from './pages/PokemonDetail.jsx'
+import CreatePokemon from './pages/AddPokemon.jsx'
+import EditPokemonPage from './pages/EditPokemon.jsx'
+
 
 const router = createBrowserRouter ([
   {
@@ -17,7 +20,9 @@ const router = createBrowserRouter ([
       {
         path: "pokemons/:id",
         element: <PokemonDetail/>,
-      }
+      },
+      {path: "create", element: <CreatePokemon/>},
+      {path: "edit", element: <EditPokemonPage/>},
     ],
   },
 ]);

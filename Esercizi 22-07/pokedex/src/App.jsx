@@ -8,6 +8,7 @@ import SkeletonLoader from "./components/SkeletonLoader";
 function App() {
   const [pokemonList, setPokemonList] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [filter, setFilter] = useState("");
 
   const getPokemons = async () => {
     try {
@@ -20,9 +21,18 @@ function App() {
     }
   };
 
+  const handleChange = (e) => {
+    setFilter(e.target.value.toLowerCase());
+  };
+
   useEffect(() => {
     getPokemons();
   }, []);
+
+  const filteredPokemonList = pokemonList.filter((pokemon) =>
+    pokemon.name.toLowerCase().includes(filter)
+  );
+
 
   return (
       <div className="container">
@@ -31,28 +41,15 @@ function App() {
           <SkeletonLoader />
         ) : (
           <>
-          <div className="title">
-            <h1 className="">{labels.pokemonList}</h1>
-          </div>
-          <div className="container-tabella">
-            <table className="tabella">
-              <thead className="">
-                <tr>
-                <th className="img">
-                  </th>
-                  <th className="name">
-                    {labels.pokemonName}
-                  </th>
-                  <th className="genere">
-                    {labels.pokemonType}
-                  </th>
-                  <th className="number">
-                    {labels.pokemonNumber}
-                  </th>
-                </tr>
-              </thead>
-              <PokemonTable/>
-            </table>
+          <div>
+            <input
+            className="filter-input"
+              type="text"
+              value={filter}
+              placeholder={labels.pokemonInsert}
+              onChange={handleChange}
+            />
+            <PokemonTable pokemonList={filteredPokemonList} />
           </div>
           </>
           )}

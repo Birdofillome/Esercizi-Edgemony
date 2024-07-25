@@ -2,8 +2,9 @@ import { useEffect, useState } from "react"
 import { getPokemonList } from "../api/pokemonClient";
 import { Link } from "react-router-dom";
 import { labels } from "../data/label";
+import "./pokemonTable.css";
 
-const PokemonTable = () => {
+const PokemonTable = ({pokemonList}) => {
     const [pokemons, setPokemons] = useState([]);
     useEffect(() => {
         getPokemonList().then((data) => {
@@ -11,9 +12,28 @@ const PokemonTable = () => {
         
     })
 },[])
-return (
+return ( 
+    <div className="container-tabella">
+            <table className="tabella">
+            <thead>
+                <tr>
+                <th className="img">
+                </th>
+                <th className="name">
+                {labels.pokemonName}
+                </th>
+                <th className="genere">
+                {labels.pokemonType}
+                </th>
+                <th className="number">
+                {labels.pokemonNumber}
+                </th>
+                <th>
+                </th>
+                </tr>
+            </thead>
     <tbody>
-        {pokemons.map(pokemon => (
+        {pokemonList.map(pokemon => (
             <tr key={pokemon.id}>
             <td><img src={pokemon.image} alt="img"/></td>
             <td>{pokemon.name}</td> 
@@ -29,6 +49,8 @@ return (
         ))
         }
     </tbody>
+    </table>
+    </div>
 )
 }
 

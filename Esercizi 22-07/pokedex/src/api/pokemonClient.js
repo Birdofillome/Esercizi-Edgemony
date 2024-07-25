@@ -52,3 +52,27 @@ export const getPokemonDetail = (id) => {
 		}, 500);
 	});
 };
+
+export const addPokemon = (body) => {
+	return new Promise((resolve) => {
+		setTimeout(() => {
+			resolve(
+				{
+					...body, id: self.crypto.randomUUID(),
+				}
+			)
+		}, 3000)
+	})
+}
+
+export const editPokemon = (body) => {
+	return new Promise((resolve) => {
+		setTimeout(() => {
+			resolve(
+				{
+					...body,
+				}
+			)
+		}, 3000)
+	});
+};

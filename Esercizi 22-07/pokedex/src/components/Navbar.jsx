@@ -1,7 +1,11 @@
 import { NavLink } from "react-router-dom";
 import { labels } from "../data/label";
 import "./navbar.css"
-const menuList = [{ name: labels.navHome, path: "/" }];
+const menuList = [
+    {name: labels.navHome, path: "/" },
+    {name: labels.navCreate, path: "create"},
+    {name: labels.navEdit, path: "edit"}
+];
 
 const NavBar = () => {
 return (
@@ -21,6 +25,7 @@ return (
             </NavLink>
         </li>
         ))}
+        <li><a href="#">Shop</a></li>
         </ul>
     </nav>
 );
