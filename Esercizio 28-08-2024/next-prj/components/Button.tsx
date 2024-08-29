@@ -1,14 +1,14 @@
 "use client";
 import { IUser } from "@/model/user";
-
+import { link } from "fs";
+import Link from "next/link";
 interface IButton {
     user: IUser;
-    // onPippo: () => void;
 }
 
 function Button({user}: IButton ){
 return (
-    <button className="bg-green-400 p-2 rounded-xl" onClick = {() => console.log(user.website)}> Show Details</button>
+    <Link href={`/user/${user.id}`}><button className="bg-green-400 p-2 rounded-xl"> Show Details</button></Link>
 )
 }
 
