@@ -1,6 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 
-export async function GET(request: NextRequest) {
+export async function GET() {
+    
+// esempio di chiamata dati dal database
+//const dataFromDb = fetch("url-del-database")
+//return NextResponse.json(dataFromDb);
+
     return NextResponse.json({
 id: 1,
 name: "Leanne Graham",
@@ -25,3 +30,7 @@ company: {
 },
     });
 } 
+
+export async function POST() {
+    
+}

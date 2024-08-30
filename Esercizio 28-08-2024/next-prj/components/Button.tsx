@@ -1,5 +1,5 @@
 "use client";
-import { IUser } from "@/model/user";
+import { IUser } from "@/app/(models)/user";
 import { link } from "fs";
 import Link from "next/link";
 interface IButton {

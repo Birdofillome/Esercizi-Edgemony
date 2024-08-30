@@ -1,7 +1,7 @@
 "use client";
 
 import { getUser } from "@/action/get-user";
-import { IUser } from "@/model/user";
+import { IUser } from "@/app/(models)/user";
 import {useState, useEffect, useTransition} from "react";
 
 function User() {
@@ -25,7 +25,7 @@ handleGetUser();
 },[])
 
 return <div>
-    {isPending && <h1>Caricamento</h1>}
+{isPending && <h1>Caricamento</h1>}
 <div>{user?.name}</div>
 </div>
 }

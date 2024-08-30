@@ -1,4 +1,4 @@
-import { IUser } from "@/model/user";
+import { IUser } from "@/app/(models)/user";
 export const getUsers = async(): Promise<IUser[]> => {
     try{
     const res = await fetch ("https://jsonplaceholder.typicode.com/users");

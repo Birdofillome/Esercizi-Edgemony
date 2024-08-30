@@ -16,6 +16,9 @@ function Navbar() {
                 <li>
                 <Link href="/contacts" className="text-white hover:bg-gray-700 hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium">Contacts</Link>
                 </li>
+                <li>
+                <Link href="/user/create" className="text-white hover:bg-gray-700 hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium">Create</Link>
+                </li>
                 </ul>
             </div>
             </div>

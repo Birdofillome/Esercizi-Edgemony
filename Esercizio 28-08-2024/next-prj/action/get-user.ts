@@ -1,5 +1,5 @@
 //esempio chiamata fetch renderizzato lato server
-import { IUser } from "@/model/user";
+import { IUser } from "@/app/(models)/user";
 export const getUser = async(id: string): Promise<IUser> => {
     try{
     const res = await fetch (`https://jsonplaceholder.typicode.com/users/${id}`);
