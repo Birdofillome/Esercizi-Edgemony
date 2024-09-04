@@ -20,7 +20,7 @@ const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
             <h3>{label}</h3>
             <select id="select" onChange={handleChange}>
                 <option value="" hidden>
-                    seleziona
+                    Select
                 </option>
                 {list.map((item) => ( 
                 <option key={item.value} value={item.value}>

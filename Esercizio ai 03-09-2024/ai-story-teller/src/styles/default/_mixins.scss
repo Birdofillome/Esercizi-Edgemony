@@ -19,11 +19,4 @@
     height: 30px;
     border-radius: 5px;
     cursor: pointer;
-    transition: 0.5s;
-    &:hover {
-    transform: scale(1.1, 1.1);
-    }
-    &:disabled {
-    opacity: 0.5;
-    }
 }

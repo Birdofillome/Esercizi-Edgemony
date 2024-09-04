@@ -11,7 +11,7 @@ return (
 
     <div className={style.main}>
         <h1>{title}</h1>
-        <Button label="login"/>
+        <Button label="Login"/>
     </div>
 )
 };
