@@ -8,15 +8,30 @@ export const ListaGeneri = [
       value: "Fantasy"
     },
     {
-      label: "Romantico",
-      value: "Romantico"
+      label: "Romantic",
+      value: "Romantic"
     },
     {
-      label: "Fantascienza",
-      value: "Fantascienza"
+      label: "Comedy",
+      value: "Comedy"
     },
     {
-      label: "Giallo",
-      value: "Giallo"
+      label: "Thriller",
+      value: "Thriller"
     },
+    {
+      label: "Adventure",
+      value: "Adventure"
+    },
+  ];
+
+  const navBar = [
+    {
+      label: "Home",
+      link: "/",
+    },
+    {
+      label: "Contattaci",
+      link: "/contatti",
+    }
   ]
